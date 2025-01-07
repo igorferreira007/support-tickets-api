@@ -8,8 +8,8 @@ Essa aplicação tem como proposito criar, editar, atualizar, pesquisar ou remov
 
 ## Principais rotas
 
-- Create (POST): /tickets
-  Exemplo do corpo da requisição:
+- Create (POST): /tickets  
+  Exemplo do corpo da requisição:  
   {
   	"equipment": "Teclado",
   	"description": "Não funciona",
