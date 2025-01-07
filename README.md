@@ -17,6 +17,19 @@ Essa aplicação tem como proposito criar, editar, atualizar, pesquisar ou remov
   }
   
 - Index (GET): /tickets
+  
 - Update (PUT): /tickets/:id
+  Exemplo do corpo da requisição:
+  {
+  	"equipment": "Teclado",
+  	"description": "Teclado não funciona o espaço",
+  	"user_name": "Igor Ferreira"
+  }
+  
 - Close (PATCH): /tickets/:id/close
+  Exemplo do corpo da requisição:
+  {
+  	"solution": "Teclado substituido"
+  }
+  
 - Remove (DELETE): /tickets/:id
