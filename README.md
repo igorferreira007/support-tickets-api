@@ -8,7 +8,7 @@ Essa aplicação tem como proposito criar, editar, atualizar, pesquisar ou remov
 
 ## Principais rotas
 
-- **Create (POST)**: /tickets  
+- **Create (POST)**: http://localhost:3333/tickets  
   Exemplo do corpo da requisição:  
   {
   	"equipment": "Teclado",
@@ -16,7 +16,7 @@ Essa aplicação tem como proposito criar, editar, atualizar, pesquisar ou remov
   	"user_name": "Igor Ferreira"
   }
   
-- **Index (GET)**: /tickets
+- **Index (GET)**: http://localhost:3333/tickets
   
 - **Update (PUT)**: /tickets/:id  
   Exemplo do corpo da requisição:  
@@ -26,10 +26,24 @@ Essa aplicação tem como proposito criar, editar, atualizar, pesquisar ou remov
   	"user_name": "Igor Ferreira"
   }
   
-- **Close (PATCH)**: /tickets/:id/close  
+- **Close (PATCH)**: http://localhost:3333/tickets/:id/close  
   Exemplo do corpo da requisição:  
   {
   	"solution": "Teclado substituido"
   }
   
-- **Remove (DELETE)**: /tickets/:id
+- **Remove (DELETE)**: http://localhost:3333/tickets/:id
+
+## Como executar
+
+1. Clone o repositório:  
+   ```
+   git clone https://github.com/igorferreira007/support-tickets-api.git
+
+2. Navegue para o diretório do projeto.
+
+3. Inicie o servidor:
+    ```
+    npm run dev
+
+4. Utilize alguma ferramenta para teste de APIs passando os endpoints.
