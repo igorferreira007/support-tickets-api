@@ -17,6 +17,8 @@ Essa aplicação tem como proposito criar, editar, atualizar, pesquisar ou remov
   }
   
 - **Index (GET)**: http://localhost:3333/tickets
+
+- **Index with Filters (GET)**: http://localhost:3333/tickets?status=closed ou http://localhost:3333/tickets?status=open
   
 - **Update (PUT)**: /tickets/:id  
   Exemplo do corpo da requisição:  
