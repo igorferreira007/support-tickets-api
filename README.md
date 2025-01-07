@@ -8,7 +8,7 @@ Essa aplicação tem como proposito criar, editar, atualizar, pesquisar ou remov
 
 ## Principais rotas
 
-- Create (POST): /tickets  
+- **Create (POST)**: /tickets  
   Exemplo do corpo da requisição:  
   {
   	"equipment": "Teclado",
@@ -16,9 +16,9 @@ Essa aplicação tem como proposito criar, editar, atualizar, pesquisar ou remov
   	"user_name": "Igor Ferreira"
   }
   
-- Index (GET): /tickets
+- **Index (GET)**: /tickets
   
-- Update (PUT): /tickets/:id
+- **Update (PUT)**: /tickets/:id
   Exemplo do corpo da requisição:
   {
   	"equipment": "Teclado",
@@ -26,10 +26,10 @@ Essa aplicação tem como proposito criar, editar, atualizar, pesquisar ou remov
   	"user_name": "Igor Ferreira"
   }
   
-- Close (PATCH): /tickets/:id/close
+- **Close (PATCH)**: /tickets/:id/close
   Exemplo do corpo da requisição:
   {
   	"solution": "Teclado substituido"
   }
   
-- Remove (DELETE): /tickets/:id
+- **Remove (DELETE)**: /tickets/:id
