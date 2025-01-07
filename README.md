@@ -8,7 +8,7 @@ Essa aplicação tem como proposito criar, editar, atualizar, pesquisar ou remov
 
 ## Principais rotas
 
-- **Create (POST)**: *http://localhost:3333/tickets*  
+- **Create (POST)**: http://localhost:3333/tickets  
   Exemplo do corpo da requisição:  
   {
   	"equipment": "Teclado",
