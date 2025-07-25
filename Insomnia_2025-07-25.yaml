@@ -1,0 +1,160 @@
+type: collection.insomnia.rest/5.0
+name: Support Tickets
+meta:
+  id: wrk_914bbc9ee8d940b28c73b771433dd34e
+  created: 1736015380377
+  modified: 1736015380377
+  description: ""
+collection:
+  - url: http://localhost:3333/tickets
+    name: Create
+    meta:
+      id: req_b778671d0f09472f97eee228e50bf87e
+      created: 1736015397101
+      modified: 1736286839175
+      isPrivate: false
+      description: ""
+      sortKey: -1736015397101
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"equipment": "Teclado",
+        	"description": "Não funciona",
+        	"user_name": "Igor Ferreira"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3333/tickets
+    name: Index
+    meta:
+      id: req_9f0a4f19c41c4e6ea9637cc59a3852f1
+      created: 1736199993433
+      modified: 1736291717993
+      isPrivate: false
+      description: ""
+      sortKey: -1736199993433
+    method: GET
+    parameters:
+      - id: pair_d69d0e45d3aa489ea314aecfc15336aa
+        name: status
+        value: closed
+        description: ""
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: insomnia/10.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3333/tickets/7e2f09f9-3ffd-4bba-a6cc-46ca1f4fbca2
+    name: Update
+    meta:
+      id: req_a4d7866f929e4b829ea469e68088204c
+      created: 1736202279232
+      modified: 1736285041769
+      isPrivate: false
+      description: ""
+      sortKey: -1736202279232
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"equipment": "Teclado",
+        	"description": "Teclado não funciona o espaço",
+        	"user_name": "Igor Ferreira"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3333/tickets/f932fddf-7cd8-4e71-a16f-8178a505e698/close
+    name: Close
+    meta:
+      id: req_dab2ec197d6e4d77b5f532c68811ccca
+      created: 1736283955388
+      modified: 1736286892566
+      isPrivate: false
+      description: ""
+      sortKey: -1736283955388
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"solution": "Teclado substituido"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3333/tickets/302ee962-9e45-4477-a8b5-deec9656e712
+    name: Remove
+    meta:
+      id: req_ab853f1092524501b0f0d3bb7771dedd
+      created: 1736285986225
+      modified: 1736286696408
+      isPrivate: false
+      description: ""
+      sortKey: -1736285986225
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/10.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_4b35e320d125cdad3213cbbe00ab58e7b406e971
+    created: 1736015380383
+    modified: 1736015380383
+environments:
+  name: Base Environment
+  meta:
+    id: env_4b35e320d125cdad3213cbbe00ab58e7b406e971
+    created: 1736015380380
+    modified: 1736015380380
+    isPrivate: false
